@@ -1,12 +1,11 @@
 body{
     color: rgb(4, 119, 184);
-    font-size: 10px;
-
 }
+
 .item1 { grid-area: logo; }
 .item2 { grid-area: header; }
-.item3 { grid-area: busca; }
-.item4 { grid-area: lateral; max-width: 450px;}
+.item3 { grid-area: busca; float: inline-start; max-height: 70px;}
+.item4 { grid-area: lateral; max-width: 450px; }
 .item5 { grid-area: cont1; max-width: 600px;}
 .item6 { grid-area: cont2; max-width: 600px;}
 .item7 { grid-area: cont3; max-width: 600px;}
@@ -24,20 +23,31 @@ body{
       'footer footer footer footer';
     grid-gap: 5px;    
     padding: 5px;
-    place-items: center;
+    place-items: center; 
+    /*background-color: blue;*/
 }
   
 .grid-container > div {    
     text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
+    padding: 20px; 
+    /*background-color: red;*/
 }
+
 .logo{
     width: 50%;
+    min-width: 72px;
     height: auto;    
 }
+
 .imgcont{
     width: 90%;
     height: auto;
     padding: 2px;
+}
+.buscar{
+    border-radius: 5px;
+    width: 30%;
+}
+.color{
+    color: rgb(4, 119, 184);    
 }
